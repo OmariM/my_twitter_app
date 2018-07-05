@@ -2,7 +2,9 @@ package com.codepath.apps.restclienttemplate.models;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
+@Parcel
 public class Tweet {
 
     // list out the attributes
@@ -10,6 +12,9 @@ public class Tweet {
     public long uid; // database ID for the tweet
     public User user;
     public String createdAt;
+
+
+    public Tweet() {}
 
     // deserialize the JSON
     public static Tweet fromJSON(JSONObject jsonObject) throws JSONException {
@@ -23,4 +28,20 @@ public class Tweet {
         return tweet;
     }
 
+
+    public String getBody() {
+        return body;
+    }
+
+    public long getUid() {
+        return uid;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
 }
