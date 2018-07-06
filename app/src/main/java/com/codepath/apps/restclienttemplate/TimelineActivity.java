@@ -64,8 +64,10 @@ public class TimelineActivity extends AppCompatActivity {
                 // Make sure you call swipeContainer.setRefreshing(false)
                 // once the network request has completed successfully.
                 fetchTimelineAsync(0);
+
             }
         });
+
         // Configure the refreshing colors
         swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
                 android.R.color.holo_green_light,
@@ -79,16 +81,16 @@ public class TimelineActivity extends AppCompatActivity {
         // `client` here is an instance of Android Async HTTP
         // getHomeTimeline is an example endpoint.
         client.getHomeTimeline(new JsonHttpResponseHandler() {
-            public void onSuccess(JSONArray json) {
+            public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
                 // Remember to CLEAR OUT old items before appending in the new ones
                 tweetAdapter.clear();
                 // ...the data has come back, add new items to your adapter...
-//                populateTimeline();
+                populateTimeline();
                 // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
             }
 
-            public void onFailure(Throwable e) {
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable e) {
                 Log.d("DEBUG", "Fetch timeline error: " + e.toString());
             }
         });
