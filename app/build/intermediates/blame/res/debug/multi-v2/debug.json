@@ -626,21 +626,6 @@
             ]
         },
         {
-            "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/684cb7cd770dbc99327e6bba0d3feda8/res/values-ldltr-v21/values-ldltr-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "112",
-                        "endOffsets": "163"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat",
             "map": [
                 {
@@ -670,6 +655,21 @@
                         "startOffsets": "55",
                         "endColumns": "65",
                         "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/684cb7cd770dbc99327e6bba0d3feda8/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
                     }
                 }
             ]
@@ -1312,38 +1312,6 @@
             ]
         },
         {
-            "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/684cb7cd770dbc99327e6bba0d3feda8/res/values-en-rAU/values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
-                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
-                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
-                    }
-                },
-                {
-                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2dab344a16260c2dcd61a4f0ccb46a51/res/values-en-rAU/values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1907",
-                        "endColumns": "100",
-                        "endOffsets": "2003"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat",
             "map": [
                 {
@@ -1376,10 +1344,20 @@
             ]
         },
         {
-            "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat",
+            "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2dab344a16260c2dcd61a4f0ccb46a51/res/values-vi/values-vi.xml",
+                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/684cb7cd770dbc99327e6bba0d3feda8/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,209,309,417,501,601,716,793,869,951,1054,1158,1257,1362,1465,1569,1725,1825",
+                        "endColumns": "103,99,107,83,99,114,76,75,81,102,103,98,104,102,103,155,99,81",
+                        "endOffsets": "204,304,412,496,596,711,788,864,946,1049,1153,1252,1357,1460,1564,1720,1820,1902"
+                    }
+                },
+                {
+                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2dab344a16260c2dcd61a4f0ccb46a51/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1390,19 +1368,9 @@
                     "to": {
                         "startLines": "20",
                         "startColumns": "4",
-                        "startOffsets": "1958",
+                        "startOffsets": "1907",
                         "endColumns": "100",
-                        "endOffsets": "2054"
-                    }
-                },
-                {
-                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/684cb7cd770dbc99327e6bba0d3feda8/res/values-vi/values-vi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,219,327,436,520,623,742,819,896,980,1084,1193,1294,1399,1513,1618,1775,1874",
-                        "endColumns": "113,107,108,83,102,118,76,76,83,103,108,100,104,113,104,156,98,83",
-                        "endOffsets": "214,322,431,515,618,737,814,891,975,1079,1188,1289,1394,1508,1613,1770,1869,1953"
+                        "endOffsets": "2003"
                     }
                 }
             ]
@@ -1435,6 +1403,38 @@
                         "startOffsets": "2023",
                         "endColumns": "100",
                         "endOffsets": "2119"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/omatthews/AndroidStudioProjects/MySimpleTweets/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2dab344a16260c2dcd61a4f0ccb46a51/res/values-vi/values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1958",
+                        "endColumns": "100",
+                        "endOffsets": "2054"
+                    }
+                },
+                {
+                    "source": "/Users/omatthews/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/684cb7cd770dbc99327e6bba0d3feda8/res/values-vi/values-vi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,219,327,436,520,623,742,819,896,980,1084,1193,1294,1399,1513,1618,1775,1874",
+                        "endColumns": "113,107,108,83,102,118,76,76,83,103,108,100,104,113,104,156,98,83",
+                        "endOffsets": "214,322,431,515,618,737,814,891,975,1079,1188,1289,1394,1508,1613,1770,1869,1953"
                     }
                 }
             ]
