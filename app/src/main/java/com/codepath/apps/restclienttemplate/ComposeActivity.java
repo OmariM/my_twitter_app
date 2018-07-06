@@ -36,11 +36,15 @@ public class ComposeActivity extends AppCompatActivity {
 
 
     public void onSubmit(View v) {
-        // get the twitter client
-        TwitterClient client = TwitterApp.getRestClient(this);
         // extract the tweet text from the edit text
         EditText etName = (EditText) findViewById(R.id.etTweet);
         String tweetString = etName.getText().toString();
+        if(tweetString.length() > 280) {
+            Toast.makeText(this, "Tweet is too long!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        // get the twitter client
+        TwitterClient client = TwitterApp.getRestClient(this);
         // make the network request
         client.sendTweet(tweetString, new JsonHttpResponseHandler() {
             @Override
