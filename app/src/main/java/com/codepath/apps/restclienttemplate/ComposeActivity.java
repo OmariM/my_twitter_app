@@ -37,7 +37,7 @@ public class ComposeActivity extends AppCompatActivity {
 
     public void onSubmit(View v) {
         // extract the tweet text from the edit text
-        EditText etName = (EditText) findViewById(R.id.etTweet);
+        EditText etName = findViewById(R.id.etTweet);
         String tweetString = etName.getText().toString();
         if(tweetString.length() > 280) {
             Toast.makeText(this, "Tweet is too long!", Toast.LENGTH_SHORT).show();

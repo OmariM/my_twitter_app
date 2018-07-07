@@ -99,11 +99,6 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         notifyDataSetChanged();
     }
 
-    // Add a list of items -- change to type used
-    public void addAll(List<Tweet> list) {
-        tweets.addAll(list);
-        notifyDataSetChanged();
-    }
     // create the viewholder pattern
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
