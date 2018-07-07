@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tvDetailTimestamp"
+        android:layout_marginStart="60dp"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/tvDetailBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDetailTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvDetailBody"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="43dp"
+        android:text="Timestamp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDetailBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDetailBody"
+        android:layout_width="363dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="74dp"
+        android:text="Body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDetailLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDetailTimestamp"
+        android:layout_alignStart="@+id/tvDetailBody"
+        android:layout_marginBottom="-217dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailBody"
+        app:srcCompat="@drawable/ic_vector_heart" />
+
+    <ImageView
+        android:id="@+id/ivDetailRetweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvDetailBody"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="229dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDetailLikes"
+        app:srcCompat="@drawable/ic_vector_retweet" />
+
+    <TextView
+        android:id="@+id/tvDetailLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDetailTimestamp"
+        android:layout_marginBottom="-217dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/ivDetailLikes"
+        android:text="Likes"
+        app:layout_constraintStart_toEndOf="@+id/ivDetailLikes"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailBody" />
+
+    <TextView
+        android:id="@+id/tvDetailRetweets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivDetailRetweets"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/ivDetailLikes"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/ivDetailRetweets"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLikes" />
+
+    <ImageView
+        android:id="@+id/ivDetailProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tvDetailName"
+        android:layout_alignStart="@+id/tvDetailBody"
+        app:srcCompat="@color/twitter_blue_50" />
+</RelativeLayout>

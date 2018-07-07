@@ -33,9 +33,13 @@
                     android:scheme="@string/intent_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".TimelineActivity"
+        <activity
+            android:name=".TimelineActivity"
             android:theme="@style/TwitterTheme" />
-        <activity android:name=".ComposeActivity"
+        <activity
+            android:name=".ComposeActivity"
+            android:theme="@style/TwitterTheme" />
+        <activity android:name=".DetailActivity"
             android:theme="@style/TwitterTheme"></activity>
     </application>
 

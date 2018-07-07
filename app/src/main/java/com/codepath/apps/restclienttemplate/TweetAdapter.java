@@ -1,6 +1,8 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Movie;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
@@ -16,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
+import org.parceler.Parcels;
 import org.w3c.dom.Text;
 
 import java.text.ParseException;
@@ -101,7 +104,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
     // create the viewholder pattern
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public ImageView ivProfileImage;
         public TextView tvUsername;
         public TextView tvBody;
@@ -116,6 +119,27 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             tvUsername = itemView.findViewById(R.id.tvUserName);
             tvBody = itemView.findViewById(R.id.tvBody);
             tvTimestamp = itemView.findViewById(R.id.tvTimestamp);
+
+            // add this as the item view listener
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            // get the position
+            int position = getAdapterPosition();
+            // ensure position validity
+            if (position != RecyclerView.NO_POSITION) {
+                // get the movie at the position
+                Tweet tweet = tweets.get(position);
+                // create intent for the new activity
+                Intent intent = new Intent(context, DetailActivity.class);
+                // serialize using the parceler
+                intent.putExtra("tweet", Parcels.wrap(tweet));
+                // show the activity
+                context.startActivity(intent);
+            }
+
         }
     }
 
